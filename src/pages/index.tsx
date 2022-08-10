@@ -268,7 +268,7 @@ const Home: NextPage = () => {
                     </button>
                   </div>
                   <div className="p-6 space-y-6">
-                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-wrap">
+                    <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400 whitespace-pre-wrap sm:whitespace-normal">
                       {`Thanks for watching!\nLet us know what you think below 👇🏼`}
                     </p>
                     <div className="grid gap-6 mb-6 md:grid-cols-2">
