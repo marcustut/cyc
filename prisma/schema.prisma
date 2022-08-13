@@ -64,3 +64,13 @@ model VerificationToken {
 
     @@unique([identifier, token])
 }
+
+model PromoClipResponses {
+    id          String   @id @default(cuid())
+    name        String
+    phoneNumber String   @unique
+    comment     String?
+    interested  Boolean  @default(false)
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
+}

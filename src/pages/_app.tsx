@@ -4,6 +4,7 @@ import { SessionProvider } from 'next-auth/react';
 import type { AppType } from 'next/dist/shared/lib/utils';
 import { trpc } from '../utils/trpc';
 import { useEffect } from 'react';
+import { ReactQueryDevtools } from 'react-query/devtools';
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   useEffect(() => {
@@ -25,6 +26,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <SessionProvider session={pageProps.session}>
       <Component {...pageProps} />
+      <ReactQueryDevtools initialIsOpen={false} />
     </SessionProvider>
   );
 };
