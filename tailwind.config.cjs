@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         lemonDays: ['Lemon Days', 'sans-serif'],
         nunito: ['Nunito', 'sans-serif'],
+        zcool: ['ZCOOL KuaiLe', 'cursive'],
       },
     },
   },

@@ -216,11 +216,13 @@ const Home: NextPage = () => {
         >
           <main className="container flex flex-col items-center justify-center pt-16 pb-28 p-4 mx-auto text-white">
             <div className="text flex flex-col justify-center items-center">
-              <h1 className="text-6xl font-bold">夏日出逃</h1>
+              <h1 className="text-6xl font-zcool">夏日出逃</h1>
               <p className="pt-8 font-nunito font-black text-3xl">Let&apos;s take a break!</p>
-              <p className="pt-4 font-nunito font-bold text-center max-w-[450px]">
-                YTHX22 was one for the books, and whether you weren’t able to join us or just want
-                to relive your favorite moments from the weekend, this is your one-stop shop.
+              <p className="pt-4 font-zcool text-xl">丛林穿越 · 百人星空音乐会 · 篝火狂欢会</p>
+              <p className="pt-4 font-nunito font-bold text-center max-w-[450px] md:max-w-[600px]">
+                Join us on a one-day trip to the wild side of El Sanctuary, Alor Gajah, Melacca on
+                3rd September (Saturday). It&apos;s only RM65 per person and it&apos;ll definitely
+                be an unforgettable experience. Food and transportation are included in the fees.
               </p>
             </div>
 
