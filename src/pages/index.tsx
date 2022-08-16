@@ -5,7 +5,6 @@ import { trpc } from '../utils/trpc';
 import Youtube, { YouTubeProps } from 'react-youtube';
 import { Fragment, useEffect, useState } from 'react';
 import { animate, inView, stagger } from 'motion';
-import { Modal } from 'flowbite-react';
 import { Dialog, Transition } from '@headlessui/react';
 import { useFormik } from 'formik';
 import { z } from 'zod';
@@ -220,9 +219,9 @@ const Home: NextPage = () => {
               <p className="pt-8 font-nunito font-black text-3xl">Let&apos;s take a break!</p>
               <p className="pt-4 font-zcool text-xl">丛林穿越 · 百人星空音乐会 · 篝火狂欢会</p>
               <p className="pt-4 font-nunito font-bold text-center max-w-[450px] md:max-w-[600px]">
-                Join us on a one-day trip to the wild side of El Sanctuary, Alor Gajah, Melacca on
-                3rd September (Saturday). It&apos;s only RM65 per person and it&apos;ll definitely
-                be an unforgettable experience. Food and transportation are included in the fees.
+                喜欢亲近大自然和享受户外活动？这个夏日我们一起出逃到野外 EL Sanctuary, Alor Gajah,
+                Melaka。日期位于9月3日（星期六）。 一人仅需RM65
+                ，包括膳食与交通在内。我们等着你去探险！
               </p>
             </div>
 
