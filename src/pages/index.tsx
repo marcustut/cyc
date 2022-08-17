@@ -155,7 +155,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     animate('.logo-container', { opacity: [0, 1] }, { duration: 1.5 });
-    animate('.text *', { opacity: [0, 1], y: [50, 0] }, { duration: 1.5, delay: stagger(0.3) });
+    animate('.text *', { opacity: [0, 1], y: [50, 0] }, { duration: 1.5, delay: stagger(0.1) });
 
     inView('#comment-box', () => {
       animate(
@@ -217,11 +217,69 @@ const Home: NextPage = () => {
             <div className="text flex flex-col justify-center items-center">
               <h1 className="text-6xl font-zcool">夏日出逃</h1>
               <p className="pt-8 font-nunito font-black text-3xl">Let&apos;s take a break!</p>
-              <p className="pt-4 font-zcool text-xl">丛林穿越 · 百人星空音乐会 · 篝火狂欢会</p>
-              <p className="pt-4 font-nunito font-bold text-center max-w-[450px] md:max-w-[600px]">
-                喜欢亲近大自然和享受户外活动？这个夏日我们一起出逃到野外 EL Sanctuary, Alor Gajah,
-                Melaka。日期位于9月3日（星期六）。 一人仅需RM65
-                ，包括膳食与交通在内。我们等着你去探险！
+              <p className="pt-4 font-zcool text-lg sm:text-xl text-center">
+                丛林穿越 · 百人星空音乐会 · 篝火狂欢会
+              </p>
+              <p className="pt-4 font-nunito text-center text-sm sm:text-base max-w-[450px] md:max-w-[600px]">
+                <span className="block">
+                  这个夏日别再对天花板发呆了
+                  ！9月3日邀你与我们一起逃出一尘不变的生活状态，换个地方看看人间烟火吧 🌿
+                </span>
+                <br />
+                <span className="block font-bold italic">🏕 EL SANCTUARY ALOR GAJAH</span>
+                <span className="block italic">
+                  <strong>🚌 9AM </strong>(Gather @ WISMA FGA Kuchai Lama · L3)
+                </span>
+                <span className="block italic">
+                  <strong>🌃 10PM </strong>(Arrival @ WISMA FGA Kuchai Lama · P2)
+                </span>
+                <span className="block italic">
+                  <strong>💰 RM65 </strong>(包括巴士票、入门票以及3餐膳食)
+                </span>
+                <br />
+                <span className="block">期待【夏日出逃】的计划有你的身影</span>
+                <span className="block">#休息一夏</span>
+                <br />
+                <span className="block">ℹ️ 若知详情请联系 :</span>
+                <span>
+                  <a
+                    href="https://wa.me/+60108972831"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex italic items-center font-semibold text-orange-200 hover:underline"
+                  >
+                    +6010-8972 831 Mei Jing (FGA Puchong)
+                    <svg
+                      className="ml-1 w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                    </svg>
+                  </a>
+                </span>
+                <br />
+                <span>
+                  <a
+                    href="https://wa.me/+60123400084"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex italic items-center font-semibold text-orange-200 hover:underline"
+                  >
+                    +6012-3400 084 Kin Hou (FGA PJ)
+                    <svg
+                      className="ml-1 w-4 h-4"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+                    </svg>
+                  </a>
+                </span>
               </p>
             </div>
 
