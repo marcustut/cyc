@@ -86,8 +86,14 @@ func registrationsListener(ctx context.Context, client *firestore.Client, bot *t
 			// increment count
 			count++
 
+			// look for cg
+			cg := doc.Data()["cg"]
+			if cg == nil {
+				cg = doc.Data()["cg2"]
+			}
+
 			// send message
-			_, err := bot.Send(&telebot.Chat{ID: groupId}, fmt.Sprintf("🎉 %d. %s (%s) has just registered under %s!", count, doc.Data()["name"], doc.Data()["phoneNumber"], doc.Data()["cg"]))
+			_, err := bot.Send(&telebot.Chat{ID: groupId}, fmt.Sprintf("🎉 %d. %s (%s) has just registered under %s!", count, doc.Data()["name"], doc.Data()["phoneNumber"], cg))
 			if err != nil {
 				log.Printf("failed to send telegram message to group: %v", err)
 			}
